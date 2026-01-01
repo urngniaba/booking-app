@@ -1,6 +1,7 @@
 {
     "HomePage": {
         "title": "Bonjour le monde !",
-        "about": "Ceci est une application de réservation."
+        "about": "Ceci est une application de réservation.",
+        "contact": "Contactez-nous"
     }
 }
