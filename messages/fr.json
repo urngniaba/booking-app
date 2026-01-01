@@ -1,7 +1,26 @@
 {
-    "HomePage": {
-        "title": "Bonjour le monde !",
-        "about": "Ceci est une application de réservation.",
-        "contact": "Contactez-nous"
+  "HomePage": {
+    "title": "Bonjour!",
+    "welcome": {
+      "title": "Bienvenue sur la page d'accueil"
+    },
+    "contact": "Aller à la page de contact",
+    "about": "Aller à la page à propos"
+  },
+  "contactForm": {
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Envoyer"
+  },
+  "validation": {
+    "email": "Email invalide",
+    "name": "Nom requis",
+    "message": "Message requis pour être au moins 10 caractères"
+  },
+    "placeholder": {
+        "name": "Entrez votre nom",
+        "email": "Entrez votre email",
+        "message": "Entrez votre message"
     }
 }

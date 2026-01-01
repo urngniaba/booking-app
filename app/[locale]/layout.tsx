@@ -53,7 +53,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html>
       <body>
         <NextIntlClientProvider>
-          <Navbar></Navbar>
+          <Navbar/>
           {children}
         </NextIntlClientProvider>
       </body>

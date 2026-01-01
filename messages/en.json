@@ -1,7 +1,26 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "about": "This is a booking application.",
-    "contact": "Contact Us"
+    "welcome": {
+      "title": "Welcome to the home page"
+    },
+    "contact": "Go to the contact page",
+    "about": "Go to the about page"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "validation": {
+    "email": "Email invalid",
+    "name": "Name required",
+    "message": "Message required to be at least 10 characters"
+  },
+  "placeholder": {
+    "name": "Enter your name",
+    "email": "Enter your email",
+    "message": "Enter your message"
   }
 }
