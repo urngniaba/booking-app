@@ -33,10 +33,12 @@
 //   );
 // }
 
+// app/[locale]/layout.tsx
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
+import SessionWrapper from "@/lib/SessionWrapper";
 
 type Props = {
   children: React.ReactNode;
@@ -53,8 +55,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html>
       <body>
         <NextIntlClientProvider>
-          <Navbar/>
-          {children}
+          <SessionWrapper>
+            <Navbar />
+            {children}
+          </SessionWrapper>
         </NextIntlClientProvider>
       </body>
     </html>
