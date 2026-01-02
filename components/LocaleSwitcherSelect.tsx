@@ -20,7 +20,6 @@ type Props = {
 
 export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
   const router = useRouter();
-
   const pathname = usePathname();
   const params = useParams();
 
@@ -36,19 +35,22 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
 
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
-      <SelectTrigger
-        className="w-20 h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0"
-        aria-label={label}
-      >
-        <SelectValue />
-      </SelectTrigger>
-      <SelectContent>
-        {routing.locales.map((locale) => (
-          <SelectItem key={locale} value={locale}>
-            {locale.toUpperCase()}
-          </SelectItem>
-        ))}
-      </SelectContent>
+      {/* Wrapper relatif pour que le menu se positionne correctement */}
+      <div className="relative w-20">
+        <SelectTrigger
+          className="w-full h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0"
+          aria-label={label}
+        >
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent align="start">
+          {routing.locales.map((locale) => (
+            <SelectItem key={locale} value={locale}>
+              {locale.toUpperCase()}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </div>
     </Select>
   );
 }
