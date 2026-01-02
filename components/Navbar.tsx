@@ -1,16 +1,3 @@
-// import LocaleSwitcher from "./LocaleSwitcher";
-// import Menu from "@/components/Menu";
-
-// export default function NavBar() {
-//   return (
-//     <div className="flex justify-between items-center p-4">
-//       <LocaleSwitcher />
-//     </div>
-//   );
-// }
-// components/Navbar.tsx
-
-// components/Navbar.tsx
 "use client";
 
 import { useState } from "react";
