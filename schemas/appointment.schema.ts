@@ -9,7 +9,7 @@
  */
 import { z } from "zod";
 
-export const AppointmentSchema = z.object({
+export const AppointmentSchemaConstraints = z.object({
   timeSlotId: z.uuid(),
   clientId: z.uuid(),
   status: z.enum(["PENDING", "CONFIRMED", "COMPLETED", "CANCELLED"]),

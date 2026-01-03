@@ -1,6 +1,6 @@
 import {z} from 'zod';
 
-export const TimeSlotSchema = z.object({
+export const TimeSlotSchemaConstraints = z.object({
     startTime: z.coerce.date(),
     endTime: z.coerce.date(),
     managerId: z.uuid(),

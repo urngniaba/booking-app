@@ -11,7 +11,7 @@ export const createUser = async (data: any) => {
   });
 };
 
-export const getAllUsers = async () => {
+export const getUsers = async () => {
   return await prisma.user.findMany({ include: { role: true } });
 };
 
