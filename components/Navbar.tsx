@@ -21,6 +21,7 @@ export default function Navbar() {
     { label: "À propos", href: "/about" },
     { label: "Users", href: "/dashboard/users" },
     { label: "Contact", href: "/contact" },
+    { label: "Time Slots", href: "/dashboard/timeslots" },
   ];
 
   return (
