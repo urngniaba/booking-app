@@ -1,11 +1,6 @@
 /**
- * Appointment Schema
- * Defines the structure for appointment data validation
- * using Zod library.
- * Fields:
- * - timeSlotId: UUID of the associated time slot
- * - clientId: UUID of the client booking the appointment
- * - status: Status of the appointment (PENDING, CONFIRMED, COMPLETED, CANCELLED)
+ * Appointment Schema Constraints
+ * Defines the validation rules for appointment-related data.
  */
 import { z } from "zod";
 
@@ -14,3 +9,5 @@ export const AppointmentSchemaConstraints = z.object({
   clientId: z.uuid(),
   status: z.enum(["PENDING", "CONFIRMED", "COMPLETED", "CANCELLED"]),
 });
+
+export type AppointmentFormValues = z.infer<typeof AppointmentSchemaConstraints>;

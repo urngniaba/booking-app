@@ -22,6 +22,7 @@ export default function Navbar() {
     { label: "Users", href: "/dashboard/users" },
     { label: "Contact", href: "/contact" },
     { label: "Time Slots", href: "/dashboard/timeslots" },
+    { label: "Appointments", href: "/dashboard/appointments" },
   ];
 
   return (
